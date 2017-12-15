@@ -1,0 +1,18 @@
+{
+  "name": "ipfs.files.cat-bug",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "browserify index.js -o bundle.js",
+    "serve": "node serve"
+  },
+  "author": "Alan Shaw",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "ecstatic": "^3.1.0",
+    "ipfs": "github:ipfs/js-ipfs#fix/cat-unknown"
+  }
+}
